@@ -7,5 +7,6 @@ public class Main {
         System.out.println("sdfsdfsdf");
 
         System.out.print("test");
+
     }
 }
