@@ -1,0 +1,26 @@
+{
+  "name": "airbnb-automation-testing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "mocha -r ts-node/register \"src/test/**/*.test.ts\"",
+    "test:watch": "mocha -r ts-node/register --watch \"src/test/**/*.test.ts\"",
+    "test:tc22": "mocha -r ts-node/register \"src/test/UserProfile.test.ts\" --grep \"TC22\"",
+    "test:tc23": "mocha -r ts-node/register \"src/test/UserProfile.test.ts\" --grep \"TC23\"",
+    "test:tc24": "mocha -r ts-node/register \"src/test/UserProfile.test.ts\" --grep \"TC24\"",
+    "test:tc25": "mocha -r ts-node/register \"src/test/UserProfile.test.ts\" --grep \"TC25\"",
+    "test:tc26": "mocha -r ts-node/register \"src/test/UserProfile.test.ts\" --grep \"TC26\""
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.27.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.2",
+    "@types/selenium-webdriver": "^4.35.7",
+    "mocha": "^12.0.3",
+    "prettier": "^3.9.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
